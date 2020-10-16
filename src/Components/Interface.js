@@ -6,10 +6,15 @@ function Interface(props) {
     const { message, current, setcurrent, onsubmit, user } = props;
     const divref = useRef(null);
 
+    function playAudio() {
+        new Audio("https://d6cp9b00-a.akamaihd.net/downloads/ringtones/files/mp3/facebook-messenger-tone-wapking-fm-mp3-17015-19072-43455.mp3").play();
+    }
+
     useEffect(() => {
-        divref.current.scrollIntoView({behavior: "smooth"});
+        divref.current.scrollIntoView({ behavior: "smooth" });
+        playAudio()
     })
-    
+
     return (
         <div>
             <section className="chatbox">
@@ -33,7 +38,7 @@ function Interface(props) {
                             </article>
                         </div>
                     )) : ""}
-                    <div ref={divref}/>
+                    <div ref={divref} />
                 </section>
                 <form className="chat-input" onSubmit={onsubmit}>
                     <input type="text" value={current} placeholder="Type a message" onChange={(event) => { setcurrent(event.target.value) }} />
