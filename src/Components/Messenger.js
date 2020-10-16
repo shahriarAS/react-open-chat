@@ -8,11 +8,22 @@ function Messenger(props) {
     const [message, setMessage] = useState({})
     const { user } = props;
 
+    function playAudio() {
+        new Audio("https://d6cp9b00-a.akamaihd.net/downloads/ringtones/files/mp3/facebook-messenger-tone-wapking-fm-mp3-17015-19072-43455.mp3").play();
+      }
+
 
     useEffect(() => {
         firebase.database().ref().child("messages").on("value", snapshot => {
             if (snapshot.val() != null) {
+                var temp = Object.keys(snapshot.val())
                 setMessage(snapshot.val())
+                // console.log("Message Sound")
+                temp.map(item => {
+                    if (temp[temp.length - 1] == item && snapshot.val()[item].name !== user.displayName) {
+                        playAudio();                        
+                    }
+                })
             }
         })
     }, [])
