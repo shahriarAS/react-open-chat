@@ -32,7 +32,7 @@ function Messenger(props) {
     function onSubmit(event) {
         event.preventDefault();
         firebase.database().ref().child("messages").push(
-            { name: user.displayName, text: current, time: Date.now() }
+            { name: user.displayName, text: current, time: Date.now(), photo: user.photoURL }
         )
         setCurrent("")
     }

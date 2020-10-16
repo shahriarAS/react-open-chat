@@ -28,7 +28,7 @@ function Interface(props) {
                                         </div>
                                         <p className="timestamp"><span className="username">{message[item].name}</span>&bull;<span className="posttime">{(new Date(message[item].time)).toLocaleDateString()}</span></p>
                                     </div>
-                                    <img alt="Profile" className="user-img" id="user-0" src={user.photoURL} />
+                                    <img alt="Profile" className="user-img" id="user-0" src={message[item].photo} />
                                 </div>
                             </article>
                         </div>
