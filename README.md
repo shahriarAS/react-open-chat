@@ -1,3 +1,30 @@
+Hey,
+This is Shahriar Ahmed Shovon and <b>React Open Chat</b> is a platform for messaging in an open chat box. You can think this as Facebook Messenger Group Chat with less features. You can do here
+<ol>
+  <li>Send Message</li>
+  <li>Recheive Message</li>
+  <li>Notification sound on incoming message</li>
+  <li>Login with Google Account</li>
+</ol>
+
+But there are some problem or bug with my code
+<ol>
+  <li>No real time notification</li>
+</ol>
+
+## Technology I used
+
+<ol>
+  <li>React 16.13.x</li>
+  <li>Firebase</li>
+  <li>React Router</li>
+  <li>Tailwind CSS</li>
+</ol>
+
+## Conslusion
+
+Actually I could make this project more feature enabled and beautiful but I was just experimenting with some react feature. When I got succeed on the experiment then I just pushed it on github and never cared for this. And also my code is so ugly to read. There are no comment and standard rules to follow. I apologize for that, and thanks a lot for visiting my code.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
