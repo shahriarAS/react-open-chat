@@ -1,7 +1,7 @@
 Hey,
 This is Shahriar Ahmed Shovon and <b>React Open Chat</b> is a platform for messaging in an open chat box. You can think this as Facebook Messenger Group Chat with less features. You can do here
 <ol>
-  <li>Send Message</li>
+  <li>Send Message</li> 
   <li>Recheive Message</li>
   <li>Notification sound on incoming message</li>
   <li>Login with Google Account</li>
